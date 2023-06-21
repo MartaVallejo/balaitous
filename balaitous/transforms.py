@@ -312,7 +312,8 @@ class ApplySTOICLogisticRegressions:
     Applies the logistic regressions trained on the STOIC database
     """
     def __init__(self):
-        weights_path = Path(__file__).resolve().parents[1] / 'assets/balaitous.npz'
+        weights_path = 'drive/MyDrive/Github/balaitous/assets/balaitous.npz'
+        # weights_path = Path(__file__).resolve().parents[1] / 'assets/balaitous.npz'
         self.weights = np.load(weights_path)
 
     def __call__(self, sample):
