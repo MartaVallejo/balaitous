@@ -16,7 +16,7 @@ class Balaitous:
         device : str, optional
             'cuda' to run on GPU, 'cpu' to run on cpu, by default None
         """
-
+        print("Hola")
         if device is None:
             device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.device = device
